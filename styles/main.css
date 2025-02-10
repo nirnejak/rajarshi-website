@@ -29,7 +29,7 @@
 }
 
 .container {
-  @apply mx-auto md:w-[680px] px-[1rem] md:px-0;
+  @apply mx-auto md:w-[980px] px-[1rem] md:px-0;
 }
 
 @keyframes marquee {
