@@ -3,7 +3,6 @@ import * as React from "react"
 import Image from "next/image"
 import * as motion from "motion/react-client"
 
-import { BASE_TRANSITION } from "@/utils/animation"
 import { getMetadata } from "@/utils/metadata"
 
 import ProfileImage from "@/public/profile.jpeg"
@@ -21,9 +20,9 @@ const COPY = [
   `experiences. Passionate about products,`,
   `focus on innovation, scaling businesses,`,
   `and supporting founders in their growth journey.`,
-  `.`,
+  ``,
   `Before starting my agency I used to be a`,
-  `Product Manager at Open Money.`,
+  `Product Manager, building impactful products.`,
 ]
 
 const Home: React.FC = () => {
@@ -49,21 +48,25 @@ const Home: React.FC = () => {
           className="text-2xl font-semibold tracking-tighter text-stone-500 mb-12"
         >
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
-          {COPY.map((copy, index) => (
-            <motion.span
-              initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
-              animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-              transition={{
-                delay: 0.1 * index,
-                type: "spring",
-                bounce: 0,
-              }}
-              key={copy}
-              className="flex"
-            >
-              {copy}
-            </motion.span>
-          ))}
+          {COPY.map((copy, index) =>
+            copy ? (
+              <motion.span
+                initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
+                animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
+                transition={{
+                  delay: 0.1 * index,
+                  type: "spring",
+                  bounce: 0,
+                }}
+                key={index}
+                className="flex"
+              >
+                {copy}
+              </motion.span>
+            ) : (
+              <div className="h-6" />
+            )
+          )}
         </motion.h1>
       </div>
       <div className="mx-auto md:w-[480px] px-4 md:px-0">
