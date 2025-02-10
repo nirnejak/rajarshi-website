@@ -7,6 +7,7 @@ import { ArrowUpRight } from "akar-icons"
 import { getMetadata } from "@/utils/metadata"
 
 import ProfileImage from "@/public/profile.jpeg"
+import classNames from "@/utils/classNames"
 
 export const metadata = getMetadata({
   path: "/",
@@ -79,7 +80,10 @@ const Home: React.FC = () => {
           <a
             href="https://cal.com/rajarshi/15min"
             target="_blank"
-            className="flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+            className={classNames(
+              "flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative",
+              "hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-1 after:left-0"
+            )}
           >
             <span>Schedule Call</span>
             <ArrowUpRight size={19} />
@@ -87,7 +91,10 @@ const Home: React.FC = () => {
           <a
             href="https://x.com/rajarshikgupta"
             target="_blank"
-            className="flex items-center gap-1 ml-auto text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+            className={classNames(
+              "flex items-center gap-1 ml-auto text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative",
+              "hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-1 after:left-0"
+            )}
           >
             <span>Twitter</span>
             <ArrowUpRight size={19} />
@@ -95,7 +102,10 @@ const Home: React.FC = () => {
           <a
             href="https://www.linkedin.com/in/rajarshikgupta/"
             target="_blank"
-            className="flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+            className={classNames(
+              "flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative",
+              "hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-1 after:left-0"
+            )}
           >
             <span>LinkedIn</span>
             <ArrowUpRight size={19} />
