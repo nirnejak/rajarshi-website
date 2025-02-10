@@ -17,7 +17,7 @@ export const getMetadata = ({
 }: MetadataArgs): Metadata => {
   const metaTitle = title
   const metaDescription = description
-  const metaImage = image ?? `${config.baseUrl}/cover.png`
+  const metaImage = image ?? `${config.baseUrl}/cover.jpg`
 
   const metadata: Metadata = {
     title: metaTitle,
