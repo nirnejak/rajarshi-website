@@ -28,7 +28,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
       <html lang="en" className={classNames(sansFont.variable)}>
         <head>{renderSchemaTags()}</head>
 
-        <body className="overflow-x-hidden bg-slate-50 dark:bg-slate-900 font-sans">
+        <body className="overflow-x-hidden bg-stone-50 font-sans">
           {children}
         </body>
       </html>

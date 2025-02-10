@@ -24,12 +24,12 @@ const Home: React.FC = () => {
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0, ...BASE_TRANSITION }}
-              className="text-2xl font-semibold tracking-tighter text-green-600 mb-6"
+              className="text-2xl font-semibold tracking-tighter text-stone-500 mb-6"
             >
               Rajarshi Gupta
             </motion.h1>
           </div>
-          <div className="flex-1 font-normal tracking-tight text-slate-900 dark:text-slate-300 max-w-[50ch]">
+          <div className="flex-1 font-normal tracking-tight text-stone-900 max-w-[50ch]">
             <motion.p
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
               <a
                 href="https://x.com/rajarshikgupta"
                 target="_blank"
-                className="text-green-600 hover:text-green-700 focus:text-green-700 transition-colors font-medium"
+                className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors font-medium"
               >
                 Twitter
               </a>{" "}
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
               <a
                 href="https://www.linkedin.com/in/rajarshikgupta/"
                 target="_blank"
-                className="text-green-600 hover:text-green-700 focus:text-green-700 transition-colors font-medium"
+                className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors font-medium"
               >
                 LinkedIn
               </a>
@@ -72,7 +72,11 @@ const Home: React.FC = () => {
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0.2, ...BASE_TRANSITION }}
             >
-              <Image src={DeskImage} alt="Rajarshi Gupta's Desk" />
+              <Image
+                src={DeskImage}
+                alt="Rajarshi Gupta's Desk"
+                className="grayscale"
+              />
             </motion.div>
           </div>
         </div>
