@@ -37,7 +37,15 @@ const RootLayout: React.FC<Props> = ({ children }) => {
   return (
     <ViewTransitions>
       <html lang="en" className={classNames(sansFont.variable)}>
-        <head>{renderSchemaTags()}</head>
+        <head>
+          {renderSchemaTags()}
+
+          <script
+            defer
+            data-domain="rajarshigupta.com"
+            src="https://plausible.io/js/script.js"
+          ></script>
+        </head>
 
         <body className="overflow-x-hidden bg-stone-50 font-sans">
           {children}
