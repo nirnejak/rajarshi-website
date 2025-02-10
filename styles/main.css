@@ -19,7 +19,6 @@
 
 @theme {
   --font-sans: var(--sans-font);
-  --font-mono: var(--mono-font);
 
   --animate-swing: swing 1s infinite ease-in-out alternate;
   --animate-marquee: marquee 25s linear infinite;
