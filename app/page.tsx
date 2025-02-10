@@ -7,6 +7,7 @@ import { BASE_TRANSITION } from "@/utils/animation"
 import { getMetadata } from "@/utils/metadata"
 
 import ProfileImage from "@/public/profile.jpeg"
+import { ArrowUpRight } from "akar-icons"
 
 export const metadata = getMetadata({
   path: "/",
@@ -69,22 +70,24 @@ const Home: React.FC = () => {
         <motion.p
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-          transition={{ delay: 0.8, type: "spring" }}
-          className="mb-5 text-2xl font-semibold tracking-tighter flex gap-5"
+          transition={{ delay: 0.7, type: "spring" }}
+          className="mb-5 text-2xl font-semibold tracking-tighter flex gap-6"
         >
           <a
             href="https://x.com/rajarshikgupta"
             target="_blank"
-            className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+            className="flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
           >
-            Twitter
+            <span>Twitter</span>
+            <ArrowUpRight size={19} />
           </a>
           <a
             href="https://www.linkedin.com/in/rajarshikgupta/"
             target="_blank"
-            className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+            className="flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
           >
-            LinkedIn
+            <span>LinkedIn</span>
+            <ArrowUpRight size={19} />
           </a>
         </motion.p>
       </div>
