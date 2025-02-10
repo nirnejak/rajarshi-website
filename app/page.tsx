@@ -81,8 +81,8 @@ const Home: React.FC = () => {
             href="https://cal.com/rajarshi/15min"
             target="_blank"
             className={classNames(
-              "flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative",
-              "hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-1 after:left-0"
+              "flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative outline-hidden",
+              "focus:after:w-full hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-0.5 after:left-0"
             )}
           >
             <span>Schedule Call</span>
@@ -92,8 +92,8 @@ const Home: React.FC = () => {
             href="https://x.com/rajarshikgupta"
             target="_blank"
             className={classNames(
-              "flex items-center gap-1 ml-auto text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative",
-              "hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-1 after:left-0"
+              "flex items-center gap-1 ml-auto text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative outline-hidden",
+              "focus:after:w-full hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-0.5 after:left-0"
             )}
           >
             <span>Twitter</span>
@@ -103,8 +103,8 @@ const Home: React.FC = () => {
             href="https://www.linkedin.com/in/rajarshikgupta/"
             target="_blank"
             className={classNames(
-              "flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative",
-              "hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-1 after:left-0"
+              "flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors relative outline-hidden",
+              "focus:after:w-full hover:after:w-full after:duration-500 after:transition-all after:absolute after:w-0 after:bg-stone-600 after:h-0.5 after:-bottom-0.5 after:left-0"
             )}
           >
             <span>LinkedIn</span>
