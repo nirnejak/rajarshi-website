@@ -28,7 +28,7 @@ const COPY = [
 const Home: React.FC = () => {
   return (
     <main className="min-h-screen flex flex-col justify-center">
-      <div className="mx-auto md:w-[480px] px-4 md:px-0">
+      <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
         <motion.div
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
@@ -69,17 +69,25 @@ const Home: React.FC = () => {
           )}
         </motion.h1>
       </div>
-      <div className="mx-auto md:w-[480px] px-4 md:px-0">
+      <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
         <motion.p
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
           transition={{ delay: 0.7, type: "spring" }}
-          className="mb-5 text-xl md:text-2xl font-semibold tracking-tighter flex gap-6"
+          className="mb-5 text-lg justify-baseline md:text-xl font-semibold tracking-tighter flex gap-6"
         >
+          <a
+            href="https://cal.com/rajarshi/15min"
+            target="_blank"
+            className="flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+          >
+            <span>Schedule Call</span>
+            <ArrowUpRight size={19} />
+          </a>
           <a
             href="https://x.com/rajarshikgupta"
             target="_blank"
-            className="flex items-center gap-1 text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
+            className="flex items-center gap-1 ml-auto text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
           >
             <span>Twitter</span>
             <ArrowUpRight size={19} />
