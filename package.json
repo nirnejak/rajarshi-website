@@ -1,0 +1,75 @@
+{
+  "name": "nextjs-typescript-starter",
+  "description": "Next.js TypeScript Starter",
+  "version": "1.0.0",
+  "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,mdx}\"",
+    "type-check": "tsc --pretty --noEmit",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "akar-icons": "^1.9.31",
+    "class-variance-authority": "^0.7.1",
+    "dotenv": "^16.4.7",
+    "motion": "^12.4.1",
+    "next": "^15.1.6",
+    "next-view-transitions": "^0.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.33.5",
+    "sonner": "^1.7.4",
+    "use-sound": "^4.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@tailwindcss/postcss": "^4.0.5",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.7",
+    "eslint": "^9.20.0",
+    "eslint-config-love": "^118.0.0",
+    "eslint-config-next": "^15.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.0.5",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint"
+  },
+  "volta": {
+    "node": "22.11.0"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "eslint",
+    "prettier",
+    "precommit"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirnejak/nextjs-typescript-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/nirnejak/nextjs-typescript-starter/issues"
+  }
+}
