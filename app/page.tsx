@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   return (
     <main className="min-h-screen flex">
       <div className="container my-auto">
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <div className="flex-1">
             <motion.h1
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
