@@ -17,7 +17,7 @@ export const metadata = getMetadata({
 const Home: React.FC = () => {
   return (
     <main className="min-h-screen flex flex-col justify-center">
-      <div className="container my-auto">
+      <div className="mx-auto md:w-[480px] px-4 md:px-0">
         <motion.div
           initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
           animate={{ translateY: 0, opacity: 1, filter: "none" }}
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
           </span>
         </motion.h1>
       </div>
-      <div className="container">
+      <div className="mx-auto md:w-[480px] px-4 md:px-0">
         <motion.p
           initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
           animate={{ translateY: 0, opacity: 1, filter: "none" }}
