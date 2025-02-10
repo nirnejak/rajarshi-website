@@ -34,7 +34,7 @@ const Home: React.FC = () => {
           initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
           animate={{ translateY: 0, opacity: 1, filter: "none" }}
           transition={{ delay: 0.1, ...BASE_TRANSITION }}
-          className="text-2xl font-semibold tracking-tighter text-stone-500 mb-6"
+          className="text-2xl font-semibold tracking-tighter text-stone-500"
         >
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
           <span className="flex mb-6">
@@ -43,13 +43,13 @@ const Home: React.FC = () => {
             innovation, scaling businesses, and supporting founders in their
             growth journey.
           </span>
-          <span className="flex">
+          <span className="flex mb-12">
             Before starting my agency I used to be a Product Manager at Open
             Money.
           </span>
         </motion.h1>
       </div>
-      <div className="mx-auto md:w-[480px] px-4 md:px-0 mt-12">
+      <div className="mx-auto md:w-[480px] px-4 md:px-0">
         <motion.p
           initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
           animate={{ translateY: 0, opacity: 1, filter: "none" }}
