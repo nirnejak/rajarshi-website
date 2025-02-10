@@ -36,8 +36,8 @@ const Home: React.FC = () => {
           transition={{ delay: 0.1, ...BASE_TRANSITION }}
           className="text-2xl font-semibold tracking-tighter text-stone-500 mb-6"
         >
-          <span className="flex mb-2">Hi, I’m Rajarshi Gupta,</span>
-          <span className="flex mb-10">
+          <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
+          <span className="flex mb-6">
             I run a web and app development agency, helping founders build
             impactful digital experiences. Passionate about products, I focus on
             innovation, scaling businesses, and supporting founders in their
@@ -49,26 +49,24 @@ const Home: React.FC = () => {
           </span>
         </motion.h1>
       </div>
-      <div className="mx-auto md:w-[480px] px-4 md:px-0">
+      <div className="mx-auto md:w-[480px] px-4 md:px-0 mt-12">
         <motion.p
           initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
           animate={{ translateY: 0, opacity: 1, filter: "none" }}
           transition={{ delay: 0.2, ...BASE_TRANSITION }}
-          className="text-base mt-auto md:text-lg mb-5"
+          className="mb-5 text-2xl font-semibold flex gap-5"
         >
-          Connect with me on -{" "}
           <a
             href="https://x.com/rajarshikgupta"
             target="_blank"
-            className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors font-medium"
+            className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
           >
             Twitter
-          </a>{" "}
-          or{" "}
+          </a>
           <a
             href="https://www.linkedin.com/in/rajarshikgupta/"
             target="_blank"
-            className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors font-medium"
+            className="text-stone-500 hover:text-stone-600 focus:text-stone-600 transition-colors"
           >
             LinkedIn
           </a>
