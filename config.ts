@@ -1,5 +1,5 @@
 const config = {
-  baseUrl: "https://rajarshi.net",
+  baseUrl: "https://rajarshigupta.com",
   appName: "Rajarshi Gupta",
   appDescription: "Rajarshi Gupta's Personal Website",
   creator: "Jitendra Nirnejak",
