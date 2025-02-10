@@ -29,12 +29,12 @@ const Home: React.FC = () => {
               Rajarshi Gupta
             </motion.h1>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 text-neutral-600 dark:text-neutral-300 max-w-[50ch]">
             <motion.p
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0, ...BASE_TRANSITION }}
-              className="text-sm mb-6 md:text-base tracking-tighter text-neutral-600 dark:text-neutral-300 max-w-[50ch]"
+              className="text-sm mb-4 md:text-base"
             >
               Hi. I’m, a Product Manager based in Bangalore. I started my
               journey as an Electrical & Electronics Engineer, then worked as a
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0.1, ...BASE_TRANSITION }}
-              className="text-sm mb-10 md:text-base tracking-tighter text-neutral-600 dark:text-neutral-300 max-w-[50ch]"
+              className="text-sm mb-4 md:text-base"
             >
               I also run a web and app development agency, helping founders
               create a strong first impression with top-notch designs. At my
@@ -55,8 +55,8 @@ const Home: React.FC = () => {
             <motion.p
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
-              transition={{ delay: 0.1, ...BASE_TRANSITION }}
-              className="text-sm mb-10 md:text-base tracking-tighter text-neutral-600 dark:text-neutral-300 max-w-[50ch]"
+              transition={{ delay: 0.2, ...BASE_TRANSITION }}
+              className="text-sm mb-16 md:text-base"
             >
               Connect with me on -{" "}
               <a
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
             <motion.div
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
-              transition={{ delay: 0.2, ...BASE_TRANSITION }}
+              transition={{ delay: 0.3, ...BASE_TRANSITION }}
             >
               <Image src={DeskImage} alt="Rajarshi Gupta's Desk" />
             </motion.div>
