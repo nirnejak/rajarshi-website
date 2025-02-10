@@ -2,11 +2,11 @@ import * as React from "react"
 
 import Image from "next/image"
 import * as motion from "motion/react-client"
+import { ArrowUpRight } from "akar-icons"
 
 import { getMetadata } from "@/utils/metadata"
 
 import ProfileImage from "@/public/profile.jpeg"
-import { ArrowUpRight } from "akar-icons"
 
 export const metadata = getMetadata({
   path: "/",
