@@ -14,6 +14,17 @@ export const metadata = getMetadata({
   description: "Rajarshi Gupta's Personal Website",
 })
 
+const COPY = [
+  `I run a web and app development agency,`,
+  `helping founders build impactful digital`,
+  `experiences. Passionate about products,`,
+  `focus on innovation, scaling businesses,`,
+  `and supporting founders in their growth journey.`,
+  `.`,
+  `Before starting my agency I used to be a`,
+  `Product Manager at Open Money.`,
+]
+
 const Home: React.FC = () => {
   return (
     <main className="min-h-screen flex flex-col justify-center">
@@ -34,26 +45,31 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
           transition={{ delay: 0.1, type: "spring" }}
-          className="text-2xl font-semibold tracking-tighter text-stone-500"
+          className="text-2xl font-semibold tracking-tighter text-stone-500 mb-12"
         >
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
-          <span className="flex mb-6">
-            I run a web and app development agency, helping founders build
-            impactful digital experiences. Passionate about products, I focus on
-            innovation, scaling businesses, and supporting founders in their
-            growth journey.
-          </span>
-          <span className="flex mb-12">
-            Before starting my agency I used to be a Product Manager at Open
-            Money.
-          </span>
+          {COPY.map((copy, index) => (
+            <motion.span
+              initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
+              animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
+              transition={{
+                delay: 0.1 * index,
+                type: "spring",
+                bounce: 0,
+              }}
+              key={copy}
+              className="flex"
+            >
+              {copy}
+            </motion.span>
+          ))}
         </motion.h1>
       </div>
       <div className="mx-auto md:w-[480px] px-4 md:px-0">
         <motion.p
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-          transition={{ delay: 0.2, type: "spring" }}
+          transition={{ delay: 0.8, type: "spring" }}
           className="mb-5 text-2xl font-semibold tracking-tighter flex gap-5"
         >
           <a
