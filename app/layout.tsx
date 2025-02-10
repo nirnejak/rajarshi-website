@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import type { Viewport } from "next"
-import { Mona_Sans } from "next/font/google"
+import localFont from "next/font/local"
 import { ViewTransitions } from "next-view-transitions"
 
 import classNames from "@/utils/classNames"
@@ -9,9 +9,20 @@ import { renderSchemaTags } from "@/utils/schema"
 
 import "../styles/main.css"
 
-const sansFont = Mona_Sans({
+const sansFont = localFont({
   variable: "--sans-font",
-  subsets: ["latin"],
+  src: [
+    {
+      path: "../fonts/Satoshi-Variable.woff2",
+      weight: "300 800",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Satoshi-VariableItalic.woff2",
+      weight: "300 800",
+      style: "italic",
+    },
+  ],
 })
 
 export const viewport: Viewport = {
