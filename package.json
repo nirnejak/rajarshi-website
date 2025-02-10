@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-typescript-starter",
-  "description": "Next.js TypeScript Starter",
+  "name": "rajarshi-website",
+  "description": "Rajarshi Gupta's Personal Website",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
   "type": "module",
@@ -67,9 +67,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nirnejak/nextjs-typescript-starter"
+    "url": "https://github.com/nirnejak/rajarshi-website"
   },
   "bugs": {
-    "url": "https://github.com/nirnejak/nextjs-typescript-starter/issues"
+    "url": "https://github.com/nirnejak/rajarshi-website/issues"
   }
 }

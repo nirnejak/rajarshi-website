@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Next.js TypeScript Starter",
-    "short_name": "Next.js TypeScript Starter",
-    "description": "Next.js TypeScript Starter with basic configuration",
+    "name": "Rajarshi Gupta's Personal Website",
+    "short_name": "Rajarshi Gupta's Personal Website",
+    "description": "Rajarshi Gupta's Personal Website with basic configuration",
     "icons": [
         {
             "src": "/path-to-icons/icon-192x192.png",

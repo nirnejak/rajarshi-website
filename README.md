@@ -1,5 +1,5 @@
 <h1 align="center">
-  Next.js TypeScript Starter
+  Rajarshi Gupta's Personal Website
 </h1>
 
 ---
