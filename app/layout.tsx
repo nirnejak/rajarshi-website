@@ -3,7 +3,7 @@ import * as React from "react"
 import type { Viewport } from "next"
 import { ViewTransitions } from "next-view-transitions"
 
-import { Inter } from "next/font/google"
+import { Mona_Sans } from "next/font/google"
 import localFont from "next/font/local"
 
 import classNames from "@/utils/classNames"
@@ -11,7 +11,7 @@ import { renderSchemaTags } from "@/utils/schema"
 
 import "../styles/main.css"
 
-const sansFont = Inter({
+const sansFont = Mona_Sans({
   variable: "--sans-font",
   subsets: ["latin"],
 })
