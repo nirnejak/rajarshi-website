@@ -19,9 +19,9 @@ const Home: React.FC = () => {
     <main className="min-h-screen flex flex-col justify-center">
       <div className="mx-auto md:w-[480px] px-4 md:px-0">
         <motion.div
-          initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
-          animate={{ translateY: 0, opacity: 1, filter: "none" }}
-          transition={{ delay: 0, ...BASE_TRANSITION }}
+          initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
+          animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
+          transition={{ delay: 0, type: "spring" }}
           className="mb-6 flex items-start justify-between"
         >
           <Image
@@ -31,9 +31,9 @@ const Home: React.FC = () => {
           />
         </motion.div>
         <motion.h1
-          initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
-          animate={{ translateY: 0, opacity: 1, filter: "none" }}
-          transition={{ delay: 0.1, ...BASE_TRANSITION }}
+          initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
+          animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
+          transition={{ delay: 0.1, type: "spring" }}
           className="text-2xl font-semibold tracking-tighter text-stone-500"
         >
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
@@ -51,10 +51,10 @@ const Home: React.FC = () => {
       </div>
       <div className="mx-auto md:w-[480px] px-4 md:px-0">
         <motion.p
-          initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
-          animate={{ translateY: 0, opacity: 1, filter: "none" }}
-          transition={{ delay: 0.2, ...BASE_TRANSITION }}
-          className="mb-5 text-2xl font-semibold flex gap-5"
+          initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
+          animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
+          transition={{ delay: 0.2, type: "spring" }}
+          className="mb-5 text-2xl font-semibold tracking-tighter flex gap-5"
         >
           <a
             href="https://x.com/rajarshikgupta"
