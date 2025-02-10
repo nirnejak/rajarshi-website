@@ -28,6 +28,10 @@
   --animate-shake: shake 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container {
+  @apply mx-auto md:w-[680px] px-[1rem] md:px-0;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0%);
