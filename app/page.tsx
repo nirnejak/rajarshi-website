@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
           transition={{ delay: 0.1, type: "spring" }}
-          className="text-2xl font-semibold tracking-tighter text-stone-500 mb-12"
+          className="text-xl md:text-2xl font-semibold tracking-tighter text-stone-500 mb-12"
         >
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
           {COPY.map((copy, index) =>
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
           animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
           transition={{ delay: 0.7, type: "spring" }}
-          className="mb-5 text-2xl font-semibold tracking-tighter flex gap-6"
+          className="mb-5 text-xl md:text-2xl font-semibold tracking-tighter flex gap-6"
         >
           <a
             href="https://x.com/rajarshikgupta"
