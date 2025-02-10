@@ -24,53 +24,45 @@ const Home: React.FC = () => {
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0, ...BASE_TRANSITION }}
-              className="text-3xl font-bold tracking-tighter text-neutral-800 dark:text-neutral-300 mb-6"
+              className="text-2xl font-semibold tracking-tighter text-green-600 mb-6"
             >
               Rajarshi Gupta
             </motion.h1>
           </div>
-          <div className="flex-1 text-neutral-600 dark:text-neutral-300 max-w-[50ch]">
+          <div className="flex-1 font-normal tracking-tight text-slate-900 dark:text-slate-300 max-w-[50ch]">
             <motion.p
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0, ...BASE_TRANSITION }}
               className="text-sm mb-4 md:text-base"
             >
-              Hi. I’m, a Product Manager based in Bangalore. I started my
-              journey as an Electrical & Electronics Engineer, then worked as a
-              Software Developer at Accenture before transitioning into product
-              management.
+              Hi, I’m a Product Manager based in Bangalore with a background in
+              Electrical & Electronics Engineering. I started as a Software
+              Developer at Accenture before moving into product management. I
+              also run a web and app development agency, helping founders build
+              impactful digital experiences. Passionate about products, I focus
+              on innovation, scaling businesses, and supporting founders in
+              their growth journey.
             </motion.p>
             <motion.p
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
               transition={{ delay: 0.1, ...BASE_TRANSITION }}
-              className="text-sm mb-4 md:text-base"
-            >
-              I also run a web and app development agency, helping founders
-              create a strong first impression with top-notch designs. At my
-              core, I’m all about products—exploring new ideas, scaling
-              businesses, and supporting founders in their growth journey.
-            </motion.p>
-            <motion.p
-              initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
-              animate={{ translateY: 0, opacity: 1, filter: "none" }}
-              transition={{ delay: 0.2, ...BASE_TRANSITION }}
               className="text-sm mb-16 md:text-base"
             >
               Connect with me on -{" "}
               <a
                 href="https://x.com/rajarshikgupta"
                 target="_blank"
-                className="font-semibold underline underline-offset-2"
+                className="text-green-600 hover:text-green-700 focus:text-green-700 transition-colors font-medium"
               >
-                X
+                Twitter
               </a>{" "}
               or{" "}
               <a
                 href="https://www.linkedin.com/in/rajarshikgupta/"
                 target="_blank"
-                className="font-semibold underline underline-offset-2"
+                className="text-green-600 hover:text-green-700 focus:text-green-700 transition-colors font-medium"
               >
                 LinkedIn
               </a>
@@ -78,7 +70,7 @@ const Home: React.FC = () => {
             <motion.div
               initial={{ translateY: 20, opacity: 0, filter: `blur(10px)` }}
               animate={{ translateY: 0, opacity: 1, filter: "none" }}
-              transition={{ delay: 0.3, ...BASE_TRANSITION }}
+              transition={{ delay: 0.2, ...BASE_TRANSITION }}
             >
               <Image src={DeskImage} alt="Rajarshi Gupta's Desk" />
             </motion.div>
