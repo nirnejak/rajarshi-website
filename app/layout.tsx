@@ -26,7 +26,7 @@ const sansFont = localFont({
 })
 
 export const viewport: Viewport = {
-  themeColor: "#000000",
+  themeColor: "#44403b",
 }
 
 interface Props {
