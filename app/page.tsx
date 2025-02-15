@@ -28,7 +28,7 @@ const COPY = [
 
 const Home: React.FC = () => {
   return (
-    <main className="min-h-screen flex flex-col justify-center">
+    <main className="min-h-dvh flex flex-col justify-center">
       <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
         <motion.div
           initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
