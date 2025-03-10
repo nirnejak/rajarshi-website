@@ -27,14 +27,12 @@ const Home: React.FC = () => {
         </div>
         <h1 className="text-xl md:text-2xl font-semibold tracking-tighter text-stone-700 mb-12">
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
-          I’m a Product Manager passionate about building innovative digital
-          experiences that drive real impact. I work closely with founders to
-          turn bold ideas into scalable products — from zero to one and beyond.
+          A Product Manager passionate about solving complex problems to drive
+          growth. Specializing in product strategy and user-centered design.
           <br />
-          <br />
-          Focused on product strategy, innovation, and growth, I’m here to help
-          founders navigate the journey of building, launching, and scaling
-          products that matter.
+          <br />I partner with founders to turn ambitious ideas into scalable
+          products, leveraging deep user insights to create experiences that
+          resonate and deliver impact.
         </h1>
       </div>
       <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
