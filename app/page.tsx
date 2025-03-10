@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import Image from "next/image"
-import * as motion from "motion/react-client"
 import { ArrowUpRight } from "akar-icons"
 
 import { getMetadata } from "@/utils/metadata"
@@ -15,68 +14,31 @@ export const metadata = getMetadata({
   description: "Rajarshi Gupta's Personal Website",
 })
 
-const COPY = [
-  `I run a web and app development agency,`,
-  `helping founders build impactful digital`,
-  `experiences. Passionate about products,`,
-  `focus on innovation, scaling businesses,`,
-  `and supporting founders in their growth journey.`,
-  ``,
-  `Before starting my agency I used to be a`,
-  `Product Manager, building impactful products.`,
-]
-
 const Home: React.FC = () => {
   return (
     <main className="min-h-dvh flex flex-col justify-center">
       <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
-        <motion.div
-          initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
-          animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-          transition={{ delay: 0, type: "spring" }}
-          className="mb-6 flex items-start justify-between"
-        >
+        <div className="mb-6 flex items-start justify-between">
           <Image
             src={ProfileImage}
             alt="Rajarshi Gupta"
             className="w-20 rounded-md -rotate-3"
           />
-        </motion.div>
-        <motion.h1
-          initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
-          animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-          transition={{ delay: 0.1, type: "spring" }}
-          className="text-xl md:text-2xl font-semibold tracking-tighter text-stone-700 mb-12"
-        >
+        </div>
+        <h1 className="text-xl md:text-2xl font-semibold tracking-tighter text-stone-700 mb-12">
           <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
-          {COPY.map((copy, index) =>
-            copy ? (
-              <motion.span
-                initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
-                animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-                transition={{
-                  delay: 0.1 * index,
-                  type: "spring",
-                  bounce: 0,
-                }}
-                key={index}
-                className="flex"
-              >
-                {copy}
-              </motion.span>
-            ) : (
-              <div className="h-6" />
-            )
-          )}
-        </motion.h1>
+          I’m a Product Manager passionate about building innovative digital
+          experiences that drive real impact. I work closely with founders to
+          turn bold ideas into scalable products — from zero to one and beyond.
+          <br />
+          <br />
+          Focused on product strategy, innovation, and growth, I’m here to help
+          founders navigate the journey of building, launching, and scaling
+          products that matter.
+        </h1>
       </div>
       <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
-        <motion.p
-          initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
-          animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
-          transition={{ delay: 0.7, type: "spring" }}
-          className="mb-5 text-lg justify-baseline md:text-xl font-semibold tracking-tighter flex gap-6"
-        >
+        <p className="mb-5 text-lg justify-baseline md:text-xl font-semibold tracking-tighter flex gap-6">
           <a
             href="https://cal.com/rajarshi/15min"
             target="_blank"
@@ -110,7 +72,7 @@ const Home: React.FC = () => {
             <span>LinkedIn</span>
             <ArrowUpRight size={19} />
           </a>
-        </motion.p>
+        </p>
       </div>
     </main>
   )
