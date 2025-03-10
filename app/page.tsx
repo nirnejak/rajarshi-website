@@ -4,9 +4,9 @@ import Image from "next/image"
 import { ArrowUpRight } from "akar-icons"
 
 import { getMetadata } from "@/utils/metadata"
+import classNames from "@/utils/classNames"
 
 import ProfileImage from "@/public/profile.jpeg"
-import classNames from "@/utils/classNames"
 
 export const metadata = getMetadata({
   path: "/",
