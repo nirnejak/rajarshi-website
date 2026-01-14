@@ -16,17 +16,27 @@ export const metadata = getMetadata({
 
 const Home: React.FC = () => {
   return (
-    <main className="min-h-dvh flex flex-col justify-center">
-      <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
+    <main className="flex min-h-dvh flex-col justify-center">
+      <div
+        className="
+          px-4
+          md:mx-auto md:w-[480px] md:px-0
+        "
+      >
         <div className="mb-6 flex items-start justify-between">
           <Image
             src={ProfileImage}
             alt="Rajarshi Gupta"
-            className="w-20 rounded-md -rotate-3"
+            className="w-20 -rotate-3 rounded-md"
           />
         </div>
-        <h1 className="text-xl md:text-2xl font-semibold tracking-tighter text-stone-700 mb-12">
-          <span className="flex mb-6">Hi, I’m Rajarshi Gupta.</span>
+        <h1
+          className="
+            mb-12 text-xl font-semibold tracking-tighter text-stone-700
+            md:text-2xl
+          "
+        >
+          <span className="mb-6 flex">Hi, I’m Rajarshi Gupta.</span>
           A Product Manager passionate about solving complex problems to drive
           growth. Specializing in product strategy and user-centered design.
           <br />
@@ -35,8 +45,19 @@ const Home: React.FC = () => {
           resonate and deliver impact.
         </h1>
       </div>
-      <div className="md:mx-auto md:w-[480px] px-4 md:px-0">
-        <p className="mb-5 text-lg justify-baseline md:text-xl font-semibold tracking-tighter flex gap-6">
+      <div
+        className="
+          px-4
+          md:mx-auto md:w-[480px] md:px-0
+        "
+      >
+        <p
+          className="
+            mb-5 flex justify-baseline gap-6 text-lg font-semibold
+            tracking-tighter
+            md:text-xl
+          "
+        >
           <a
             href="https://cal.com/rajarshi/15min"
             target="_blank"

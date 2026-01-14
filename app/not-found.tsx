@@ -15,6 +15,7 @@ const NotFound: React.FC = () => {
     <main className="container">
       <section className="grid min-h-dvh place-content-center">
         <div className="text-center">
+          {/* eslint-disable-next-line better-tailwindcss/enforce-consistent-line-wrapping */}
           <h1 className="mb-3 text-5xl font-bold tracking-tighter text-stone-800">
             404
           </h1>
@@ -22,7 +23,11 @@ const NotFound: React.FC = () => {
             The page you&apos;re looking for cannot be found. Go{" "}
             <Link
               href="/"
-              className="font-semibold hover:underline focus:underline"
+              className="
+                font-semibold
+                hover:underline
+                focus:underline
+              "
             >
               Home
             </Link>

@@ -47,11 +47,11 @@ const RootLayout: React.FC<Props> = ({ children }) => {
           ></script>
         </head>
 
-        <body className="overflow-x-hidden font-sans bg-stone-50">
+        <body className="overflow-x-hidden bg-stone-50 font-sans">
           {children}
         </body>
         <div
-          className="absolute inset-0 bg-repeat bg-left-top -z-10 opacity-40"
+          className="absolute inset-0 -z-10 bg-top-left bg-repeat opacity-40"
           style={{ backgroundImage: "url('bg.png')", backgroundSize: 50 }}
         />
       </html>
