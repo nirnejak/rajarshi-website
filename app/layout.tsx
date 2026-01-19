@@ -7,7 +7,7 @@ import { ViewTransitions } from "next-view-transitions"
 import classNames from "@/utils/classNames"
 import { renderSchemaTags } from "@/utils/schema"
 
-import "../styles/main.css"
+import "./main.css"
 
 const sansFont = localFont({
   variable: "--sans-font",
