@@ -1,22 +1,22 @@
 {
-    "theme_color": "#44403b",
-    "background_color": "#fafaf9",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Rajarshi Gupta's Personal Website",
-    "short_name": "Rajarshi Gupta",
-    "description": "Rajarshi Gupta's Personal Website",
-    "icons": [
-        {
-            "src": "/icons/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "theme_color": "#44403b",
+  "background_color": "#fafaf9",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Rajarshi Gupta's Personal Website",
+  "short_name": "Rajarshi Gupta",
+  "description": "Rajarshi Gupta's Personal Website",
+  "icons": [
+    {
+      "src": "/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

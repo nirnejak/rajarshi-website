@@ -1,8 +1,7 @@
-import * as React from "react"
-
 import type { Viewport } from "next"
 import localFont from "next/font/local"
 import { ViewTransitions } from "next-view-transitions"
+import type * as React from "react"
 
 import classNames from "@/utils/classNames"
 import { renderSchemaTags } from "@/utils/schema"
